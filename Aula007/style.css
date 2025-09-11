@@ -1,8 +1,22 @@
 body {
+    background-color: antiquewhite;
+    
 
 }
 
 
 h1 {
-    
+    color: aquamarine;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+    border-radius: 20px;
+    margin: 3px;
+   
+}
+label{
+    font-style: italic;
+    font-size: 20;
 }
