@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recrutamento</title>
+  </head>
+  <body>
+    <header>
+      <h1>RECRUTAMENTO</h1>
+    </header>
+
+    <main>
+      <section id="secao-formulario">
+        <h2 class="texto">Prencha o formulário abaixo</h2>
+
+        <form action="obrigado.html">
+          <div class="campo">
+            <label for="nome">Nome completo: </label>
+            <input type="text" id="nome" name="nome" />
+          </div>
+
+          <div class="campo">
+            <label for="e-mail">E-mail: </label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" name="telefone" required />
+          </div>
+
+          <div class="campo">
+            <label for="data_de_nascimento">Data de Nascimento: </label>
+            <input
+              type="date"
+              id="data_nascimento"
+              name="data_nascimento"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="regiao">Região: </label>
+            <select name="regiao" id="regiao" required>
+              <option value="">Selecione</option>
+              <option value="rn">RN</option>
+              <option value="sp">SP</option>
+              <option value="rs">RS</option>
+              <option value="mt">MT</option>
+              <option value="rj">RJ</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="area">Área de interesse: </label>
+            <select name="area" id="area">
+              <option value="">Selecione</option>
+              <option value="desenvolvedor">Desenvolvedor</option>
+              <option value="front_end">Front_End</option>
+              <option value="back_end">Back_end</option>
+              <option value="full-stack">Full_Stack</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <button type="submit">Enviar candidatura</button>
+          </div>
+
+          <div class="campo">
+            <button type="reset">Limpar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Recrutys Recrutamento</p>
+    </footer>
+  </body>
+</html>
