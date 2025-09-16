@@ -45,6 +45,9 @@ header h1 {
 .campo button[type="submit"] {
   background-color: #4a90e2;
 }
+.campo button[type="submit"]:hover {
+  background: blueviolet;
+}
 
 .campo button[type="reset"] {
   background-color: #e0e0e0;
