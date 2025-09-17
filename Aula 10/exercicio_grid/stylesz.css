@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 9.375rem 1fr;
+    grid-template-areas:
+    "aside header header"
+    "aside main main"
+    "aside footer footer";
+    height: 100vh;
+}
+
+
+header{
+    grid-area: header;
+    background-color: black;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(233, 11, 11);
+}
+
+aside {
+    grid-area: aside;
+    background-color: aquamarine;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: blueviolet;
+}
