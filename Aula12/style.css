@@ -1,3 +1,12 @@
+:root{
+--cor-primaria: rgb(252,92,59);
+--font-corpo: "Bitcount Ink", system-ui;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,3 +14,58 @@
 }
 
 
+
+body{
+    font-family: var(--font-corpo);
+    background-color: #fcfcfc;
+    height: 100vh;
+    
+}
+
+header{
+    text-align: center;
+    padding: 5rem;
+    color: var(--cor-primaria);
+
+}
+
+
+main{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 58%, rgba(237, 221, 83, 1) 100%);
+    gap: 32px;
+}
+
+section{
+    background: rgb(97, 97, 143);
+    height: 34.5rem;
+    width: 352px;
+    padding: 2rem;
+    border-radius: 1rem;
+    line-height: 2rem;
+}
+
+img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+h3{
+    text-transform: capitalize;
+}
+p::first-letter{
+    text-transform: capitalize;
+}
+
+button{
+    background-color: var(--cor-primaria);
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    color: #fcfcfc;
+
+}

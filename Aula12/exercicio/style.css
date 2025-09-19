@@ -1,0 +1,43 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.caixa {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 100vh;
+}
+
+.side{
+    background-color: bisque;
+    padding:1.25rem ;
+    color:rgb(0, 0, 0) ;
+}
+.side .foto{
+    width: 9.375rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1.25rem;
+}
+
+.side h2{
+    text-align: center;
+    margin-bottom: 0.3125rem;
+}
+
+.side .cargo {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
