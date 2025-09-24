@@ -194,3 +194,96 @@ footer {
     height: 12.5rem;
   }
 }
+
+/* SEÇÃO DE SÉRIES */
+.series-section {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.series-section h2 {
+  font-size: 1.5rem;
+  color: #5d6d7e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.series-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.series-card {
+  background-color: white;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15.625rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.series-card:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
+}
+
+.series-card img {
+  width: 100%;
+  height: 15.625rem;
+  object-fit: cover;
+  border-bottom-left-radius: 0.9375rem;
+  border-bottom-right-radius: 0.9375rem;
+}
+
+.series-card-info {
+  padding: 1rem;
+  width: 100%;
+}
+
+.series-card-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.series-card.acao h3 {
+  color: blue;
+}
+
+.series-card.comedia h3 {
+  color: orange;
+}
+
+.series-card.drama h3 {
+  color: purple;
+}
+
+.series-card.terror h3 {
+  color: red;
+}
+
+.series-card-info p {
+  font-size: 0.875rem;
+  color: gray;
+  text-align: center;
+}
+
+@media (max-width: 48rem) {
+  .series-cards {
+    justify-content: center;
+  }
+
+  .series-card {
+    width: 100%;
+    max-width: 18.75rem;
+  }
+
+  .series-card img {
+    height: 12.5rem;
+  }
+}
