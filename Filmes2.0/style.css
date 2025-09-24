@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: black;
+  background-color: wheat;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #5d6d7e;
+  color: white;
+  box-shadow: 0 0.125rem 0.3125rem black;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .logo img {
+  height: 3.75rem;
+  width: auto;
+}
+
+header .logo h1 {
+  font-size: 1.75rem;
+}
+
+.nav_menu ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav_menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav_menu a:hover {
+  color: #61dafb;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.sidebar {
+  width: 12.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #5d6d7e;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.sidebar a:hover {
+  color: #61dafb;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15.625rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 15.625rem;
+  object-fit: cover;
+  border-bottom-left-radius: 0.9375rem;
+  border-bottom-right-radius: 0.9375rem;
+}
+
+.card-info {
+  padding: 1rem;
+  width: 100%;
+}
+
+.card-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.card.acao h3 {
+  color: blue;
+}
+
+.card.comedia h3 {
+  color: orange;
+}
+
+.card.drama h3 {
+  color: purple;
+}
+
+.card.terror h3 {
+  color: red;
+}
+
+.card-info p {
+  font-size: 0.875rem;
+  color: gray;
+  text-align: center;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 48rem) {
+  .container {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 18.75rem;
+  }
+
+  .card img {
+    height: 12.5rem;
+  }
+}
