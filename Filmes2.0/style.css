@@ -196,30 +196,30 @@ footer {
 }
 
 /* SEÇÃO DE SÉRIES */
-.series-section {
+.series_section {
   width: 100%;
   margin-bottom: 3rem;
 }
 
-.series-section h2 {
+.series_section h2 {
   font-size: 1.5rem;
   color: #5d6d7e;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.series-cards {
+.series_cards {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
 
-.series-card {
+.series_card {
   background-color: white;
   border-radius: 0.9375rem;
   overflow: hidden;
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.625rem black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,7 +229,7 @@ footer {
 
 .series-card:hover {
   transform: translateY(-0.3125rem);
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1.25rem black;
 }
 
 .series-card img {
