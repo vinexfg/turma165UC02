@@ -117,13 +117,12 @@ header .logo h1 {
 
 .card:hover {
   transform: translateY(-0.3125rem);
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1.25rem black;
 }
 
 .card img {
   width: 100%;
   height: 15.625rem;
-  object-fit: cover;
   border-bottom-left-radius: 0.9375rem;
   border-bottom-right-radius: 0.9375rem;
 }
