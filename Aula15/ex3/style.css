@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: wheat;
+    font-weight: bold;
+
+}
+
+.tamanho {
+    padding: 1.25rem;
+}
+
+header{
+    background: red;
+}
+
+aside{
+    background: yellow;
+}
+main{
+    background: greenyellow;
+}
+
+footer{
+    background: pink;
+}
+
+header, footer {
+    flex: 1 1 100%;
+}
+main, aside {
+    flex: 1 1 50%;
+}
+
+@media (max-width: 56.25rem){
+    main{
+        order: 2; flex: 1 1 50%;
+    }
+    aside{
+        order: 1; flex: 1 1 50%;
+    }
+    header{
+        order: 0;
+    }
+    footer{
+        order: 3;
+    }
+
+}
+
+@media (max-width: 600px){
+    header,main,aside,footer{
+        flex: 1 1 100%;
+    }
+}
