@@ -24,7 +24,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: var(--cor-fundo);
+    background-color: var();
     padding: var(--padding-geral);
     gap: var(--gap-principal);
     font-family: var(--fonte-principal);
