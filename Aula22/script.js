@@ -53,5 +53,8 @@ function questao03(){
 
 function questao04(){
     let cor = document.getElementById('cor').value
-    let resultado
+    let resultado = document.getElementById('resultado')
+
+
+    if
 }
