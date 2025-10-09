@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora | Vinicius</title>
   </head>
   <body>
-    <h1>Vinicius Almeida</h1>
+    <header><h1>Vinicius Almeida</h1></header>
+
     <div class="calculadora">
-      <input type="text" disabled id="display" />
+      <input type="text" disabled class="display" id="display" value="0" />
       <div class="box-buttons">
-        <button>C</button>
-        <button>&lt;</button
+        <button onclick="clean()">C</button>
+        <button onclick="back()">&lt;</button
         ><!-- ao add < algumas tag e codigos comecam a apresentar error-->
+        <button onclick="insertToDisplay('/')">/</button>
+        <button onclick="insertToDisplay('*')">*</button>
+        <button onclick="insertToDisplay('7')">7</button>
+        <button onclick="insertToDisplay('8')">8</button>
+        <button onclick="insertToDisplay('9')">9</button>
+        <button onclick="insertToDisplay('-')">-</button>
+        <button onclick="insertToDisplay('4')">4</button>
+        <button onclick="insertToDisplay('5')">5</button>
+        <button onclick="insertToDisplay('6')">6</button>
+        <button onclick="insertToDisplay('+')">+</button>
+        <button onclick="insertToDisplay('1')">1</button>
+        <button onclick="insertToDisplay('2')">2</button>
+        <button onclick="insertToDisplay('3')">3</button>
+        <button class="btn-igual" onclick="result()">=</button>
+        <button class="btn-zero" onclick="insertToDisplay('0')">0</button>
+        <button>.</button>
       </div>
     </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
