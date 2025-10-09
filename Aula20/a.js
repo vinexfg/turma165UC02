@@ -17,7 +17,6 @@ function adicionarItem() {
   document.getElementById("lista").appendChild(novoItem);
   document.getElementById("item").value = "";
 }
-a;
 
 let idade = parseInt(prompt("Digite sua idade:"));
 
