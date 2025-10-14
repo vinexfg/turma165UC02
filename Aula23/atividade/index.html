@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade</title>
@@ -9,7 +10,7 @@
     <header><h1>ARITIMETICANSSS</h1></header>
 
     <main>
-        <section>
+        <section class="listas">
             <ul>
                 <h3>1: Media aritmetica</h3>
                 <h3>2: Media Ponderada</h3>
@@ -17,30 +18,33 @@
             </ul>
         </section>
 
-        <section>
+        <section class="secao" >
             <h4>Regras:</h4>
             <p>Digite um numero por vez e aperte e clique no botao</p>
             <hr>
             <label for="">Valor X:</label>
-            <input type="number">
+            <input type="number" id="valor1">
         </section>
 
         <section>
             <label for="">Valor Y:</label>
-            <input type="number">
+            <input type="number" id="valor2">
         </section>
 
         <section>
             <label for="">Valor Z:</label>
-            <input type="number">
+            <input type="number" id="valor3">
         </section>
 
-        <button>Verificar</button>
+        <button onclick="calculo1()">Verificar</button>
+        <p id="escrito">Resultado</p>
 
         <footer>
             &copy; Feito por Vinicius Almeida
         </footer>
     </main>
+
+    <script src="scripts.js"></script>
     
 </body>
 </html>
