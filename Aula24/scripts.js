@@ -11,4 +11,6 @@ function espartanos(){
 }
 
 
-function
+function exemplo2(){
+    
+}
