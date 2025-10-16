@@ -17,4 +17,32 @@
 // }
 
 
-let meuArray = [1, "dois", true, {chave: "valor"}]
+// let meuArray = [1, "dois", true, {chave: "valor"}]
+
+
+let lista = ['vinicius', ' rodrigo', 'Alvaro']
+
+
+lista.forEach((p) =>{
+    console.log(p)
+})
+
+
+
+const array =[ 1,4,9, 16]
+
+const map1 = array.map((x) => x * 2)
+
+console.log(map1)
+
+
+const map2 = array.map((x) => x * 2)
+
+
+
+
+
+
+
+
+
