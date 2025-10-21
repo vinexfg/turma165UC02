@@ -1,27 +1,34 @@
-let tarefas = [];
+let tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
 
-let input = document.querySelector('#tarefa');
+let inputNome = document.querySelector('#nome');
+let inputMatricula = document.querySelector('#matricula');
 let lista = document.querySelector('#lista');
 let btnAdd = document.querySelector('#btnAdd');
 
 let indiceEdicao = null;
 
 btnAdd.addEventListener("click", () => {
-    if (input.value.trim() === "") {
-        alert("Digite uma tarefa");
+    let nome = inputNome.value.trim();
+    let matricula = inputMatricula.value.trim();
+
+    if (nome === "" || matricula === "") {
+        alert("Digite nome e matrícula");
         return;
     }
 
     if (indiceEdicao === null) {
-        tarefas.push(input.value.trim());
+        tarefas.push({ nome, matricula });
     } else {
-        tarefas[indiceEdicao] = input.value.trim();
+        tarefas[indiceEdicao] = { nome, matricula };
         indiceEdicao = null;
         btnAdd.textContent = 'Adicionar';
     }
 
+    salvarTarefas();
     mostrarTarefas();
-    input.value = '';
+
+    inputNome.value = '';
+    inputMatricula.value = '';
 });
 
 function mostrarTarefas() {
@@ -29,12 +36,13 @@ function mostrarTarefas() {
 
     tarefas.forEach((tarefa, i) => {
         let li = document.createElement('li');
-        li.textContent = tarefa + ' ';
+        li.textContent = `Nome: ${tarefa.nome} | Matrícula: ${tarefa.matricula} `;
 
         let editar = document.createElement('button');
         editar.textContent = 'Editar';
         editar.addEventListener('click', () => {
-            input.value = tarefas[i];
+            inputNome.value = tarefa.nome;
+            inputMatricula.value = tarefa.matricula;
             indiceEdicao = i;
             btnAdd.textContent = 'Atualizar';
         });
@@ -42,7 +50,6 @@ function mostrarTarefas() {
         let excluir = document.createElement('button');
         excluir.textContent = 'Excluir';
 
-        
         excluir.addEventListener('click', () => {
             if (window.confirm('Deseja realmente apagar a tarefa?')) {
                 tarefas.splice(i, 1);
@@ -50,9 +57,11 @@ function mostrarTarefas() {
                 if (indiceEdicao === i) {
                     indiceEdicao = null;
                     btnAdd.textContent = 'Adicionar';
-                    input.value = '';
+                    inputNome.value = '';
+                    inputMatricula.value = '';
                 }
 
+                salvarTarefas();
                 mostrarTarefas();
             }
         });
@@ -63,10 +72,9 @@ function mostrarTarefas() {
     });
 }
 
+function salvarTarefas() {
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+}
 
 
-
-
-
-/// o que tenho que estudar  (addEventListener) (forEach) (appendChild) (===) ()
-
+mostrarTarefas();
