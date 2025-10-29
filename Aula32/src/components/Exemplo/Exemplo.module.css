@@ -1,0 +1,32 @@
+*{
+    font-size: 1rem;
+}
+
+
+button{
+    background-color: black;
+    padding: .625rem;
+    border-radius: .625rem;
+    border: 1px solid;
+    color: rgb(145, 64, 64);
+}
+
+
+button:hover{
+    color: brown;
+    background-color: blueviolet;
+}
+
+
+body{
+    background-color: tomato;
+
+
+}
+
+img{
+    border-radius: 8px;
+    height: 350px;
+    width: 350px;
+    margin: 20px;
+}
