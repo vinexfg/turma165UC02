@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  transition: 0.5s;
+}
+
+/* Cabeçalho no modo claro */
+h1 {
+  color: white;
+}
+
+.trilho {
+  width: 350px;
+  height: 350px;
+  background-color: #4d4d4d;
+  border-radius: 150px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.indicador {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition: left 0.5s, background-color 0.5s;
+}
+
+.darkTrilho {
+  background-color: #c3c3c3;
+}
+
+.darkIndicador {
+  left: 200px;
+  background-color: white;
+}
+
+.darkBody {
+  background-color: #e4e4e4;
+}
+
+.darkBody h1 {
+  color: black;
+}

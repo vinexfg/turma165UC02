@@ -1,16 +1,18 @@
-import Exemplo from "./components/Exemplo/Exemplo"
-import Lampada from "./components/Lampada/Lampada"
-import Mensagem from "./components/Mensagem/Mensagem"
+import Exemplo from "./components/Exemplo/Exemplo";
+import Lampada from "./components/Lampada/Lampada";
+import LightDark from "./components/LightDark/LightDark";
+import Mensagem from "./components/Mensagem/Mensagem";
 
-export default function App(){
-  return(
+export default function App() {
+  return (
     <>
-      <Lampada />
-
+      <LightDark />
     </>
-  )
+  );
 }
 
-      {/* <h1>MACACOS DO FRONT-END</h1>
+{
+  /* <h1>MACACOS DO FRONT-END</h1>
       <Exemplo />
-      <Mensagem /> */}
+      <Mensagem /> */
+}
