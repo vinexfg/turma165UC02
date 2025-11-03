@@ -1,8 +1,7 @@
 import style from "./LightDark.module.css"
-import { useState } from "react";
 
 import { useState, useEffect } from "react";
-import "./LightDark.css";
+
 
 export default function LightDark() {
   const [theme, setTheme] = useState("light");
