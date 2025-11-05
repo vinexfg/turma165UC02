@@ -21,7 +21,7 @@ export default function Home() {
         setErro("");
       } catch (erro) {
         setErro(erro.message);
-        setPokemon(null);
+        setPokemon(null);  
       }
     }
 
