@@ -9,7 +9,7 @@ export default function AlertaHidratacao(nome = ''){
     }
     return(
         <>
-        ,<button></button>
+        <button></button>
         </>
     )
 }
