@@ -34,3 +34,10 @@ export default function AlertaHidratacao(nome = ''){
 //     </div>
 //   );
 // }
+
+
+
+
+// entao isso seria uma sequencia dep passos?
+// comunicacao
+// planejamento -> recusos necessario,
