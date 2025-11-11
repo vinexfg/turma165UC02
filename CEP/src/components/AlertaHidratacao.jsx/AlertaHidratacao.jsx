@@ -41,3 +41,6 @@ export default function AlertaHidratacao(nome = ''){
 // entao isso seria uma sequencia dep passos?
 // comunicacao
 // planejamento -> recusos necessario,
+// modelagem -> 
+//contrucao ->
+// implantacao ->a
