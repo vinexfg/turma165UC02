@@ -43,4 +43,4 @@ export default function AlertaHidratacao(nome = ''){
 // planejamento -> recusos necessario,
 // modelagem -> 
 //contrucao ->
-// implantacao -> a
+// implantacao -> a a
